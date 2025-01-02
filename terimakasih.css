@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan transparansi */
+    background-image: url('bg.png'); /* Ganti dengan path gambar Anda */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang kontainer dengan transparansi */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ffb8d9;
+}
+
+p {
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px; /* Jarak atas untuk tombol */
+    padding: 10px 20px;
+    background-color: #85ceee; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut tombol melengkung */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.button:hover {
+    background-color: #e68fc6; /* Warna tombol saat hover */
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Mengurangi padding di dalam kontainer */
+        width: 90%; /* Lebar kontainer lebih besar untuk layar kecil */
+    }
+
+    h1 {
+        font-size: 24px; /* Ukuran font lebih kecil untuk judul */
+    }
+
+    p {
+        font-size: 16px; /* Ukuran font lebih kecil untuk paragraf */
+    }
+
+    .button {
+        padding: 8px 15px; /* Mengurangi padding tombol */
+        font-size: 16px; /* Ukuran font tombol lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Ukuran font lebih kecil untuk judul */
+    }
+
+    p {
+        font-size: 14px; /* Ukuran font lebih kecil untuk paragraf */
+    }
+
+    .button {
+        padding: 6px 12px; /* Mengurangi padding tombol lebih lanjut */
+        font-size: 14px; /* Ukuran font tombol lebih kecil */
+    }
+}
